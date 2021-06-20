@@ -1,0 +1,21 @@
+{
+  "name": "png-parse-benchmark",
+  "version": "1.0.0",
+  "description": "Benchmark for PNG parsing",
+  "private": true,
+  "scripts": {
+    "build": "wasm-pack build wasm --release && webpack --mode=production",
+    "server": "webpack serve --content-base docs"
+  },
+  "keywords": [],
+  "author": "Keiichiro Ui",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "pngjs": "^6.0.0",
+    "wasm-png": "file:./wasm/pkg",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

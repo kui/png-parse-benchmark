@@ -1,0 +1,17 @@
+[package]
+name = "wasm-png"
+version = "0.1.0"
+edition = "2018"
+publish = false
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2.74"
+js-sys = "0.3.51"
+png = "0.16.8"
+
+[profile.release]
+opt-level = "s"
