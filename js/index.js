@@ -20,8 +20,6 @@ async function main() {
     console.log(p2);
 
     console.log("size: pngjs=%d, wasm-png=%d", p1.data.length, p2.dataLength());
-
-    new OffscreenCanvas
 }
 
 async function decodedPngData(decodedPng) {
